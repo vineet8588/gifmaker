@@ -1,0 +1,51 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  background-color: #282c34;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  font-size: 20px;
+}
+
+/* Style buttons */
+.downloadBtn {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  margin:8px;
+  text-decoration: none;
+}
+
+/* Darker background on mouse-over */
+.downloadBtn:hover {
+  background-color: #016101;
+}
+
+.convertBtn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  margin:8px;
+}
+
+/* Darker background on mouse-over */
+.convertBtn:hover {
+  background-color: RoyalBlue;
+}
