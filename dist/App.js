@@ -22,12 +22,17 @@ function App() {
   };
   return ready ? /* @__PURE__ */ React.createElement("div", {
     className: "App"
-  }, /* @__PURE__ */ React.createElement("h1", null, "GIF MAKER"), video && /* @__PURE__ */ React.createElement("video", {
+  }, /* @__PURE__ */ React.createElement("div", {
+    className: "head"
+  }, "GIF MAKER"), /* @__PURE__ */ React.createElement("div", {
+    style: {marginBottom: 16, fontSize: 20}
+  }, "Conver videos to gif (runs without internet after loading)"), video && /* @__PURE__ */ React.createElement("video", {
     controls: true,
     width: "250",
     src: URL.createObjectURL(video)
   }), /* @__PURE__ */ React.createElement("input", {
     style: {margin: 8},
+    id: "files",
     type: "file",
     onChange: (e) => {
       setVideo(e.target.files?.item(0));

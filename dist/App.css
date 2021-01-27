@@ -1,45 +1,56 @@
 .App {
-  text-align: center;
-}
-.App code {
-  background: #FFF3;
-  padding: 4px 8px;
-  border-radius: 4px;
-}
-.App p {
-  margin: 0.4rem;
-}
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.head {
+    font-family:fantasy;
+    font-size: 200%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+background-color: #282c34;
+font-size: calc(10px + 2vmin);
+color: white;
+font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+border: none;
+color: white;
+padding: 12px 30px;
+font-size: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style buttons */
+.downloadBtn {
+background-color: green;
+border: none;
+color: white;
+padding: 12px 30px;
+cursor: pointer;
+font-size: 20px;
+margin:8px;
+text-decoration: none;
+}
+
+/* Darker background on mouse-over */
+.downloadBtn:hover {
+background-color: #016101;
+}
+
+.convertBtn {
+background-color: DodgerBlue;
+border: none;
+color: white;
+padding: 12px 30px;
+cursor: pointer;
+font-size: 20px;
+margin:8px;
+}
+
+/* Darker background on mouse-over */
+.convertBtn:hover {
+background-color: RoyalBlue;
 }
