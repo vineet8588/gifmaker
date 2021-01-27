@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from "../_snowpack/pkg/react.js";
+import React, {useState, useEffect} from "../../_snowpack/pkg/react.js";
 import "./App.css.proxy.js";
-import {createFFmpeg, fetchFile} from "../_snowpack/pkg/@ffmpeg/ffmpeg.js";
+import {createFFmpeg, fetchFile} from "../../_snowpack/pkg/@ffmpeg/ffmpeg.js";
 const ffmpeg = createFFmpeg({log: true});
 function App() {
   const [ready, setReady] = useState(false);
